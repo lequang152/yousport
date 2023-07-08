@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/82f8296c8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./responsive.css">
+    <title>QuangHangShop</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="part-1">
+            <div class="img">
+                <a href=""><img src="https://yousport.vn/Content/Frontend/assets/images/logo-ys.png" alt="">
+                </a>
+            </div>
+            <div class="all" onclick="showMenu()">
+                <i class="fa-solid fa-bars"></i>
+                <div class="all-text">
+                    <span style="font-size: smaller">Tất cả</span>
+                    <br>
+                    <span>Môn thể thao</span>
+                </div>
+                <div class="cate">
+                    <div>Danh mục</div>
+                </div>
+            </div>
+            <div>
+                <button class="btn"><i class="fa fa-share"></i>Blog Thể Thao</button>
+            </div>
+        </div>
+
+        <div class="part-2">
+            <div class="search">
+                <input placeholder="Bạn đang tìm sản phẩm gì..." type="text" name="" id="">
+                <button><i class="fa fa-search"></i>Tìm kiếm</button>
+            </div>
+            <div class="suggest">
+                <a href="">Giày đá bóng</a>
+                <a href="">Giày lười</a>
+                <a class="hide" href="">Giày chạy bộ</a>
+                <a class="last-hide" href="">Giày bóng rổ</a>
+                <a class="last-hide" href="">Giày cầu lông</a>
+                <a class="last-hide" href="">Giày Mira</a>
+                <a class="last-hide" href="">Quần đá bóng</a>
+            </div>
+        </div>
+
+        <div class="part-3">
+            <div>
+                <a href="" class="">1800.6749</a>
+                <a href="">Hotline miễn phí</a>
+            </div>
+            
+            <button class="btn-item"><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button>
+            <button class="btn-item"><i class="fa fa-receipt"></i>Đơn hàng</button>
+            <button class="btn-item"><i class="fa-solid fa-map-location"></i>Cửa hàng</button>
+            <button class="btn-item"><i class="fa-solid fa-envelope"></i>Liên hệ</button>
+        </div>
+
+        <div id="nav" class="nav">
+            <div class="category">
+                <div class="cells">
+                    <a href=""><i class="fa-solid fa-futbol"></i>BÓNG ĐÁ</a>
+                    <ul>
+                        <li><a href="">Giày Đá Bóng</a></li>
+                        <li><a href="">Giày Đá Bóng Futsal</a></li>
+                        <li><a href="">Giày Đá Bóng Cỏ Tự Nhiên</a></li>
+                        <li><a href="">Giày Đá Bóng Sân Cỏ Nhân Tạo</a></li>
+                        <li><a href="">Giày Đá Bóng Trẻ Em</a></li>
+                        <li><a href="">Quần Áo Bóng Đá</a></li>
+                        <li><a href="">Phụ Kiện Bóng Đá</a></li>
+                    </ul>
+                </div>
+               
+                <div class="cells">
+                    <a href=""><i class="fa-solid fa-shoe-prints"></i>GIÀY ĐÁ BÓNG</a>
+                    <ul>
+                        <li><a href="">Giày Pan Thái Lan</a></li>
+                        <li><a href="">Giày Đá Bóng Mira</a></li>
+                        <li><a href="">Giày Đá Bóng Jogarbola</a></li>
+                        <li><a href="">Giày Đá Bóng Akka</a></li>
+                        <li><a href="">Giày Đá Bóng Mizuno</a></li>
+                        <li><a href="">Giày Đá Bóng Kamito</a></li>
+                        <li><a href="">Giày Đá Bóng Kelme</a></li>
+                    </ul>
+                </div>
+                <div class="cells">
+                    <a href=""><i class="fa-solid fa-shirt"></i>ĐẶT ÁO BÓNG ĐÁ</a>
+                    <ul>
+                        <li><a href="">Áo Bóng Đá Không Logo</a></li>
+                        <li><a href="">Áo Đội Tuyển Quốc Gia</a></li>
+                        <li><a href="">Áo Câu Lạc Bộ</a></li>
+                        <li><a href="">Áo Thủ Môn</a></li>
+                        <li><a href="">Áo Bib Bóng Đá</a></li>
+                        <li><a href="">In Áo Bóng Đá</a></li>
+                        <li><a href="">Đặt Áo Bóng Đá Đội Bóng</a></li>
+                    </ul>
+                </div>
+                <div class="cells">
+                    <a href=""><i class="fa-solid fa-socks"></i>PHỤ KIỆN BÓNG ĐÁ</a>
+                    <ul>
+                        <li><a href="">Quả Bóng Đá</a></li>
+                        <li><a href="">Túi Đựng Giày</a></li>
+                        <li><a href="">Găng Tay Thủ Môn</a></li>
+                        <li><a href="">Tất Đá Bóng</a></li>
+                        <li><a href="">Tất Chống Trơn</a></li>
+                        <li><a href="">Phụ Kiện Bóng Đá Khác</a></li>                    </ul>
+                </div>
+                <div class="cells">
+                    <a href=""><i class="fa-solid fa-football"></i>MÔN THỂ THAO KHÁC</a>
+                    <ul>
+                        <li><a href="">Banh bóng chuyền</a></li>
+                        <li><a href="">Banh Bóng Rổ</a></li>
+                        <li><a href="">Quần Áo Bóng Rổ</a></li>
+                        <li><a href="">Giày Cầu Lông</a></li>
+                        <li><a href="">Vợt cầu lông đan sẵn</a></li>
+                        <li><a href="">Bó gối thể thao</a></li>
+                    </ul>
+                </div>
+                <div class="cells">
+                    <a href=""><i class="fa-solid fa-dumbbell"></i>SPORTWEAR</a>
+                    <ul>
+                        <li><a href="">Giày Thể Thao Nam</a></li>
+                        <li><a href="">Quần Áo Thể Thao Nam</a></li>
+                        <li><a href="">Tất, vớ thể thao</a></li>
+                        <li><a href="">Dép thể thao</a></li>
+                        <li><a href="">Phụ Kiện Thể Thao</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="more-infor">
+                <div>
+                    <div class="item">
+                        <i class="fa-solid fa-map-location"></i>                        
+                        <div>
+                            <p class="title">ĐỊA CHỈ</p>
+                            <p>90 Huỳnh Văn Một, Phường Hiệp Tân, Quận Tân Phú, Thành phố Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-headphones-simple"></i>                        
+                        <div>
+                            <p class="title">TƯ VẤN MUA HÀNG</p>
+                            <p>1800.6749 (gọi miễn phí)</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-headphones-simple"></i>                        
+                        <div>
+                            <p class="title">GÓP Ý, KHIẾU NẠI</p>
+                            <p>0902 88 66 47</p>
+                        </div>
+                    </div>
+                    <div class="item pointer">
+                        <i class="fa-brands fa-facebook"></i>                        
+                            <div>
+                                <p class="title">YOUSPORT FANPAGE</p>
+                                <p>250K lượt thích</p>
+                            </div>
+                    </div>
+                    <div class="item pointer">
+                        <i class="fa-brands fa-instagram"></i>                        
+                        <div>
+                            <p class="title">KÊNH INSTAGRAM</p>
+                            <p>1K người theo dõi</p>
+                        </div>
+                    </div>
+                    <div class="item pointer">
+                        <i class="fa-brands fa-youtube"></i>                        <div>
+                            <p class="title">KÊNH YOUTUBE</p>
+                            <p>100K người đăng ký</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-regular fa-clock"></i>                        <div>
+                            <p class="title">MỞ CỬA</p>
+                            <p>8h30 - 21h30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tag">
+                    <a href="">Giới Thiệu</a>
+                    <a href="">Tuyển Dụng</a>
+                    <a href="">Hợp tác NCC</a>
+                    <a href="">Khách hàng thân thiết</a>
+                    <a href="">Bảo Hành & Đổi Trả</a>
+                    <a href="">Giao Hàng Tận Nơi</a>
+                    <a href="">Chọn Size Giày Đá Bóng</a>
+                    <a href="">Chính sách thanh toán</a>
+                    <a href="">Chính Sách Bảo Mật</a>
+                    <a href="">Áo Bóng Đá Theo Yêu Cầu</a>
+                    <a href="">Chính sách quy định chung</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="slide">
+            <h2>Quần Áo Bóng Đá Đẹp, Quần Áo Đá Banh</h2>
+            <p>Trang chủ / Bóng đá / Quần Áo Bóng Đá (300 sản phẩm)</p>
+        </div>
+
+        <div class="container">
+            <div class="list">
+                <div>DANH MỤC:</div>
+                <div><a href="">Quần áo CLB vải mè</a></div>
+                <div>
+                    <a href="">Áo Câu Lạc Bộ</a>
+                    <i onclick="dropMyList1()" class="fa-solid fa-caret-down">
+                        <div id="dropdown-club">
+                            <a href="">MU</a>
+                            <a href="">Chelsea</a>
+                            <a href="">Real Madrid</a>
+                            <a href="">Barcelona</a>
+                            <a href="">Liverpool</a>
+                            <a href="">Arsenal</a>
+                            <a href="">Man City</a>
+                            <a href="">Juventus</a>
+                            <a href="">Tottenham</a>
+                            <a href="">Khác</a>
+                        </div>
+                    </i>
+                </div>
+                <div>
+                    <a href="">Áo Bóng Đá Không Logo</a>
+                    <i onclick="dropMyList2()" class="fa-solid fa-caret-down">
+                        <div id="dropdown-logo">
+                            <a href="">Quần Áo Rika</a>
+                            <a href="">Quần Áo Bulbal</a>
+                            <a href="">Quần Áo CP</a>
+                            <a href="">Quân Áo Justplay</a>
+                            <a href="">Quần Áo Riki</a>
+                            <a href="">Quần Áo Mira</a>
+                        </div>
+                    </i>
+                </div>
+                <div>
+                    <a href="">Áo Đội Tuyển Quốc Gia</a>
+                    <i onclick="dropMyList3()" class="fa-solid fa-caret-down">
+                        <div id="dropdown-national">
+                            <a href="">Đức</a>
+                            <a href="">Anh</a>
+                            <a href="">Tây Ban Nha</a>
+                            <a href="">Bồ Đào Nha</a>
+                            <a href="">Argentina</a>
+                            <a href="">Việt Nam</a>
+                            <a href="">Brazil</a>
+                            <a href="">Bỉ</a>
+                        </div>
+                    </i>
+                </div>
+                <div><a href="">Áo Thủ Môn</a></div>
+            </div>
+
+            <div class="title">
+                <div class="title-text">
+                    <div><i class="fa-solid fa-shirt"></i></div>
+                    <div><h3>Quần Áo Bóng Đá</h3></div>
+                    <div><p>(300 sản phẩm)</p></div>
+                </div>
+                <div class="order">
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                    <div><span>Sắp xếp: </span>Không sắp xếp</div>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/220118090426333/quan_ao_jp_viet_nam_do_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Quần Áo Bóng đá Việt Nam 2023</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <ul>
+                                <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/220118090426333/quan_ao_jp_viet_nam_trang_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Quần Áo Bóng đá Việt Nam 2023</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/180520115522347/quan-ao-bong-da-doi-tuyen-phap-world-cup-2022-yousport-trang-1_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Áo Bóng Đá Đội Tuyển Pháp.</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/180520115522347/quan-ao-bong-da-doi-tuyen-quoc-gia-vai-thun-lanh-yousport-xanh-den-1_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Áo Bóng Đá Đội Tuyển Pháp.</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/180520115419419/quan-ao-bong-da-doi-tuyen-quoc-gia-bo-dao-nha-yousport-trang-1_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Áo Bóng Đá Đội Tuyển Bồ Đào Nha</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/180520115419419/quan-ao-bong-da-doi-tuyen-quoc-gia-bo-dao-nha-yousport-xanh-do-1_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Áo Bóng Đá Đội Tuyển Bồ Đào Nha</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/160419115852629/quan-ao-bong-da-doi-tuyen-quoc-gia-duc-yousport-den-1_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Áo Bóng Đá Đội Tuyển Đức</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/160419115852629/qabd-duc-2022-den-1_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Áo Bóng Đá Đội Tuyển Đức</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/160419115852629/quan-ao-bong-da-doi-tuyen-quoc-gia-vai-thun-lanh-duc-yousport-trang-1_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Áo Bóng Đá Đội Tuyển Đức</div>
+                        <div class="price">120.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Tặng quần áo thủ môn, miễn phí in ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/151022033424313/quan_ao_riki_namor_hong_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Quần Áo Riki CSD Namor</div>
+                        <div class="price">155.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Giảm Tới 10% Khi Đặt Đội Bóng + Miễn Phí In Ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/151022033424313/quan_ao_riki_namor_hong_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Quần Áo Riki CSD Namor</div>
+                        <div class="price">155.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Giảm Tới 10% Khi Đặt Đội Bóng + Miễn Phí In Ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="https://cdn.yousport.vn/Media/Products/151022033424313/quan_ao_riki_namor_hong_large.jpg?width=284&height=331&quality=99&scale=downscaleonly" alt="">
+                    <div class="descrip">
+                        <div class="name">Quần Áo Riki CSD Namor</div>
+                        <div class="price">155.000 <span style="text-decoration: underline;">đ</span></div>
+                        <div class="gift">
+                            <div class="gift">
+                                <ul>
+                                    <li>Giảm Tới 10% Khi Đặt Đội Bóng + Miễn Phí In Ấn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <a href="">
+                    <i class="fa-solid fa-rotate"></i>
+                    <h2>XEM THÊM, CÒN <span style="font-size: 36px;">280</span> SẢN PHẨM</h2>
+                </a>
+            </div>
+
+            <div class="bottom-text">
+                <div>
+                    <h2>
+                        QUẦN ÁO BÓNG ĐÁ, QUẦN ÁO ĐÁ BANH CHÍNH HÃNG
+                    </h2>
+                    <p>
+                        Quần áo bóng đá đẹp ngày càng được nhiều người sử dụng cho mục đích tập 
+                        luyện thể thao hàng ngày. YouSport.vn luôn cập nhật những mẫu quần áo bóng 
+                        đá đẹp nhất, giá rẻ, chất lượng được khẳng định.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        CÁC MẪU QUẦN ÁO BÓNG ĐÁ PHỔ BIẾN
+                    </h2>
+                    <ul>
+                        <li><span><a class="link" href="">Quần áo bóng đá CLB</a></span> là những bộ quần áo của các câu lạc bộ nổi tiếng 
+                            trên thế giới như: MU, Arsenal, Real Madrid, Barcelona,…
+                        </li>
+                        <li><span><a class="link" href="">Áo bóng đá đội tuyển quốc gia</a></span> là trang phục thi đấu chính thức của 1 đổi tuyển quốc gia thể hiện màu cờ sắc áo của quốc gia đó. Thường có thiết kế đơn giản mang đậm sắc thái dân tộc.
+                        </li>
+                        <li>
+                            <span><a class="link" href="">Quần áo không logo</a></span>
+                             thiết kế đẹp, phù hợp đặt đội.
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>CHẤT LIỆU QUẦN ÁO BÓNG ĐÁ</h2>
+                    <p>Hiện các mẫu quần áo bóng đá tại YouSport.vn được sản xuất từ chất liệu vải:</p>
+                    <ul>
+                        <li>
+                            <span style="font-weight: bolder;">Vải thun lạnh thể thao 100% polyester</span> chuyên dùng cho đồ thể thao với những ưu điểm tốt như: thấm hút mồ hôi tốt, thoải mái, mát mẻ khi mặc và chơi bóng.
+                        </li>
+                        <li>
+                            <span style="font-weight: bolder;">Vải mè:</span> có sợi mềm và độ thoáng mát cũng như thấm hút mồ hôi tốt. Vải khá bền và có độ co giãn 4 chiều.
+                        </li>
+                    </ul>
+                    <p>Các mẫu áo bóng đá được sản xuất từ các thương hiệu như: Bulbal, MK. iWin,… Muốn mua được những bộ đồ bóng đá đẹp và như ý, đến ngay YouSport.vn nhé</p>
+                </div>            
+            </div>
+        </div>
+        
+        <div class="container-contact">
+            <div class="contact">
+                <div>
+                    <h4>GỌI MUA HÀNG (8:30-21:30)</h4>
+                    <div>
+                        <i class="fa-solid fa-headphones"></i>  
+                        <a href="">1800 6749</a>
+                    </div>
+                    <p>Tất cả các ngày trong tuần</p>
+                </div>
+                <div>
+                    <h4>THAN PHIỀN DỊCH VỤ (08:30-21:30)</h4>
+                    <div>
+                        <i class="fa-solid fa-headphones"></i>  
+                        <a href="">0902 886647</a>
+                    </div>
+                    <p>Các ngày trong tuần (trừ lễ)</p>
+                </div>
+                <div>   
+                    <h4>TRA CỨU ĐƠN HÀNG</h4>
+                    <button>NHẬP SỐ ĐIỆN THOẠI ĐỂ KIỂM TRA</button>     
+                    <p>Thông tin đơn hàng, lịch sử mua hàng</p>
+                </div>
+                <div>
+                    <h4>HỢP TÁC KINH DOANH</h4>
+                    <div>
+                        <i class="fa-solid fa-headphones"></i>  
+                        <a href="">0902 886647</a>
+                    </div>
+                    <p>Hợp tác hàng hóa, dịch vụ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="guarantee">
+            <div>
+                <i class="fa-solid fa-check"></i>
+                <div>
+                    <h4>
+                        HÀNG CHÍNH HÃNG 100%
+                    </h4>
+                    <p>
+                        YouSport.vn cam kết bán hàng chính hãng 100%
+                    </p>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h4>
+                        GIAO HÀNG SIÊU NHANH
+                    </h4>
+                    <p>
+                        YouSport.vn giao hàng siêu nhanh nội thành TP.HCM chỉ trong 2H
+                    </p>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-repeat"></i>
+                <div>
+                    <h4>
+                        ĐỔI TRẢ TRONG 90 NGÀY
+                    </h4>
+                    <p>
+                        YouSport có chính sách đổi trả trong 90 ngày chưa qua sử dụng
+                    </p>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h4>
+                        BẢO HÀNH TRỌN ĐỜI
+                    </h4>
+                    <p>
+                        YouSport bảo hành miễn phí keo trọn đời suốt quá trình quý khách sử dụng
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="footer">
+        <div class="discription">
+            <h3>VỀ YOUSPORT</h3>
+            <p>Công ty TNHH YOUSPORT. GPKD số 031743751 cấp bởi Sở kế hoạch và đầu tư TP.HCM. Địa chỉ văn phòng: 90 Huỳnh Văn Một, Phường Hiệp Tân, Quận Tân Phú, Thành phố Hồ Chí Minh.</p>
+            <div>
+                <a href="">Giới thiệu</a>
+                <a href="">Tuyển dụng</a>
+                <a href="">Hợp tác</a>
+            </div>
+            <a href="">Trở thành cộng tác viên</a>
+            <p>&copy; 2014-2023 YouSport.vn</p>
+        </div>
+
+        <div id="support">
+            <div class="support">
+                <h3>Hỗ trợ khách hàng</h3>
+                <a href="">Chính sách thanh toán</a>
+                <a href="">Chọn Size Giày Đá Bóng</a>
+                <a href="">Giao Hàng Tận Nơi</a>
+                <a href="">Bảo Hành & Đổi Trả</a>
+                <a href="">Khách hàng thân thiết</a>
+            </div>
+            <div class="support">
+                <h3>Chính sách chung</h3>
+                <a href="">Chính sách quy định chung</a>
+                <a href="">Áo Bóng Đá Theo Yêu Cầu</a>
+                <a href="">Chính Sách Bảo Mật</a>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>DÒNG THỜI GIAN FACEBOOK</h3>
+            <div class="fb-page" data-href="https://www.facebook.com/YouSport.vn/?ref=embed_page" data-tabs="timeline" data-width="" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/YouSport.vn/?ref=embed_page" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/YouSport.vn/?ref=embed_page">YouSport.vn</a></blockquote></div>
+        </div>
+        <div class="follow">
+            <div>
+                <p>Theo dõi YouSport</p>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+
+            <div>
+                <p>Chúng nhập YouSport</p>
+                <img src="https://cdn.yousport.vn//Content/Frontend/assets/images/dathongbao.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <button class="phone">
+            1800 6749
+        </button>
+        <button class="call">
+            <i class="fa-solid fa-phone"></i>
+        </button>
+    </div>
+
+    <div class="user">
+        <i class="fa-solid fa-circle-user"></i>
+    </div>
+
+    <button onclick="topFunction()" id="back-top"><i class="fa-solid fa-up-long"></i></button>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
